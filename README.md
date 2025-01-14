@@ -1,24 +1,46 @@
-# README
+# FoodApp Test Case
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an application built with **Ruby on Rails** (backend) and **React** (frontend).
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+### Backend (Ruby on Rails)
+- RESTful API implementation.
+- Meal catalog with dynamic pricing and categories.
+- RSpec tests for API endpoints.
 
-* System dependencies
+### Frontend (React)
+- **JWT-based user authentication**.
+- Meal browsing with search and sorting functionality.
+- Responsive design with reusable components.
 
-* Configuration
+## Prerequisites
 
-* Database creation
+- Ruby 3.x and Rails 7.x
+- PostgreSQL (for Rails database)
 
-* Database initialization
+## Setup
 
-* How to run the test suite
+### Backend Setup
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Clone the repository
+```bash
+git clone https://github.com/moisesnandres/food_app_test_case.git
+cd food_app_test_case
+```
 
-* Deployment instructions
+2. Install dependencies
+```bash
+bundle install
+```
 
-* ...
+3. Set up database
+```bash
+rails db:create db:migrate
+rake data:fetch
+```
+
+4. Run the Rails server
+```bash
+rails server
+```
